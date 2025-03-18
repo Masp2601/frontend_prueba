@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Next.js Project
 
-## Getting Started
+Este es un proyecto de Next.js creado con create-next-app.
 
-First, run the development server:
+📌 Requisitos Previos
 
-```bash
+Antes de comenzar, asegúrate de tener instalado:
+
+Node.js (versión recomendada: 18 o superior)
+
+npm / yarn / pnpm / bun
+
+Un editor de código como VS Code
+
+🚀 Instalación
+
+Clona el repositorio y entra en el directorio del proyecto:
+
+git clone https://github.com/Masp2601/frontend_prueba.git
+cd frontend_prueba
+
+Instala las dependencias:
+
+npm install
+
+▶️ Ejecución del Servidor de Desarrollo
+
+Inicia el servidor de desarrollo con:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Luego, abre http://localhost:3000 en tu navegador para ver la aplicación.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🛠️ Estructura del Proyecto
 
-## Learn More
+/
+├── app/             # Páginas y componentes principales
+│   ├── layout.tsx   # Layout principal
+│   ├── page.tsx     # Página principal
+├── public/          # Archivos estáticos
+├── styles/          # Archivos de estilos globales
+├── components/      # Componentes reutilizables
+├── lib/             # Funciones y helpers
+├── .env.local       # Variables de entorno
+├── package.json     # Dependencias y scripts
+└── tsconfig.json    # Configuración de TypeScript
 
-To learn more about Next.js, take a look at the following resources:
+🐞 Depuración
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Para depurar el proyecto en VS Code:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Instala la extensión Debugger for Chrome.
 
-## Deploy on Vercel
+Agrega la siguiente configuración en .vscode/launch.json:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Ejecuta npm run dev y luego inicia la depuración en VS Code.
+
+📚 Recursos Adicionales
+
+Documentación de Next.js
+
+Tutorial interactivo de Next.js
+
+Repositorio de Next.js en GitHub
+
+🚀 Despliegue en Vercel
+
+Para desplegar en Vercel:
+
+Instala la CLI de Vercel:
+
+npm install -g vercel
+
+Ejecuta:
+
+vercel
+
+y sigue las instrucciones.
+
+Consulta la documentación de despliegue para más detalles.
